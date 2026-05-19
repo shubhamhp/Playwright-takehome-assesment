@@ -40,14 +40,16 @@ You should see all tests pass in Chromium, Firefox, and WebKit.
 
 ## Running tests
 
-| Goal |NPX Command | NPM Command |
-|------|---------|
+## Running Tests
+
+| Goal | NPX Command | NPM Script |
+|------|-------------|------------|
 | Run all tests | `npx playwright test` | `npm test` |
 | Run only the todo spec | `npx playwright test tests/todo.spec.ts` | `npm run test:todo` |
 | Run todo spec with browser visible | `npx playwright test tests/todo.spec.ts --headed` | `npm run test:todo:headed`|
-| Interactive UI mode | `npm run test:ui` |
-| Debug mode | `npm run test:debug` |
-| Open last HTML report | `npm run test:report` | `npx playwright show-report --port 8081` |
+| Interactive UI mode | `npx playwright test --ui` | `npm run test:ui` |
+| Debug mode | `npx playwright test --debug` | `npm run test:debug` |
+| Open last HTML report | `npx playwright show-report --port 8081` | `npm run test:report` |
 
 Shortcut scripts from `package.json`:
 
