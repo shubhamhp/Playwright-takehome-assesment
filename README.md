@@ -47,7 +47,21 @@ npm install
 npx playwright install
 ```
 
-Without this step, tests fail with errors about missing browser binaries.
+Incase of Certificate Errors on Restricted Environment - Follow below steps
+
+> **Troubleshooting: Certificate errors on restricted networks**
+> Some networks (e.g., enterprise proxies, firewalls with TLS inspection) perform SSL/TLS interception, which can cause `npx playwright install` to fail with a certificate verification error. If you see an error like `UNABLE_TO_VERIFY_LEAF_SIGNATURE` or `CERT_UNTRUSTED`, set the following environment variable **only for the install step** and then unset it:
+>
+> **Windows (PowerShell):**
+> ```powershell
+> $env:NODE_TLS_REJECT_UNAUTHORIZED="0"; npx playwright install; Remove-Item Env:NODE_TLS_REJECT_UNAUTHORIZED
+> ```
+> **macOS / Linux:**
+> ```bash
+> NODE_TLS_REJECT_UNAUTHORIZED=0 npx playwright install
+> ```
+>
+> This bypasses certificate validation for the download only. Do **not** leave this variable set permanently, as it disables TLS verification globally for Node.js processes.
 
 3. Run the tests
 
