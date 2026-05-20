@@ -15,11 +15,30 @@ This repository contains a Playwright UI automation framework for the [TodoMVC P
 * **Node.js**: v22.22.0 (LTS v18+ supported)
 * **npm**: v11.11.0 (Comes with Node.js)
 
+## Get the project
+
+Use either Git or a zip download, then continue with [Installation & Setup](#installation--setup) below.
+
+### Option A: Git
+
+```bash
+git clone https://github.com/shubhamhp/Playwright-takehome-assesment.git
+cd playwright-takehome
+```
+
+### Option B: Zip archive
+
+1. Download the project zip and extract it to a folder on your machine.
+2. Open a terminal in the extracted project folder (for example, `playwright-takehome`).
+
+The remaining setup steps are the same for both options.
+
 ## Installation & Setup
 
-1. Clone the repository and install dependencies:
+1. Install dependencies:
+
 ```bash
-   npm install
+npm install
 ```
 
 2. Install Playwright browser binaries (required for first-time setup):
@@ -38,7 +57,7 @@ npx playwright test
 
 You should see all tests pass in Chromium, Firefox, and WebKit.
 
-## Running tests
+
 
 ## Running Tests
 
