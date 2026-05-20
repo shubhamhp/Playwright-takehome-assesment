@@ -28,7 +28,7 @@ cd playwright-takehome
 
 ### Option B: Zip archive
 
-1. Download the project zip and extract it to a folder on your machine.
+1. Download the project zip and extract it on your machine.
 2. Open a terminal in the extracted project folder (for example, `playwright-takehome`).
 
 The remaining setup steps are the same for both options.
