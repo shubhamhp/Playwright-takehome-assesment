@@ -111,10 +111,6 @@ One spec exercises the demo end-to-end:
 ![Successful Test Run](./successful-test-execution.png)
 
 
-
-## AI usage
-
-
 ## AI Usage Documentation (Cursor)
 Per the assignment requirements, the following details the utilization of AI during the development of this framework:
 
